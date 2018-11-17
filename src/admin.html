@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>管理员</title>
+    <link rel="stylesheet" href="./css/default.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside class="">
+            <div class="newSong"></div>
+            <div class="songList"></div>
+            <div id="uploadWrapper" class="uploadWrapper">
+               <form style="display:submit;cursor:pointer" id="upload">提交或者拖拽上传</form>
+            </div>  
+        </aside>
+        <main class="formWrapper">            
+        </main>
+    </div>
+    <div class="loading">
+    </div>
+    <script src="../node_modules/leancloud-storage/dist/av-min.js"></script>
+    <script src="./js/intialization/AV.js"></script>
+    <script src="../node_modules/qiniu-js/dist/qiniu.min.js"></script>
+    <script src="../node_modules/plupload/js/plupload.min.js"></script>
+    <script src="../vendors/moxie.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/eventhub.js"></script>
+    <script src="./js/admin/form-song.js"></script>
+    <script src="./js/admin/new-song.js"></script>
+    <script src="./js/admin/loadding.js"></script>
+    <script src="./js/admin/song-list.js"></script>
+    <script src="./js/admin/upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+h1,h2,h3,h4,h5,h6{ font-weight: normal;}
+body{font:14px/1.5 Helvetica,sans-serif;}
+*::after{box-sizing: border-box;}
+*::before{box-sizing: border-box;}
+li{
+    list-style: none;
+}
+a{
+   color:inherit;
+   text-decoration: none; 
+}
+input{
+    font-size:inherit;
+}
+.wrapper{
+    display:flex;
+    font-size:12px;
+    height:100vh;
+    background-image:url("../img/black1.jpg");
+    background-size:100% 100%;
+}
+.wrapper aside{
+    width:350px; 
+    display:flex;
+    color:#888;
+    flex-direction:column;
+    border-right:1px solid #ddd;
+}
+.wrapper aside .uploadWrapper{
+    padding:20px;
+    height:50px;
+    border:1px dotted #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+.wrapper .newSong{
+    text-align:center;
+    padding:10px;
+    border-bottom:1px solid #999;
+    font-size:16px;
+}
+.wrapper .songList{
+    flex-grow: 1;
+}
+.loading{
+    visibility: hidden;
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    background-color:rgba(224, 238, 224, 0.8);
+    z-index:1;
+ }
+ .open{
+     visibility:visible;
+ }
+ .loading::before{
+     content:"";
+     display:block;
+     width:30px;
+     height:30px;
+     animation: myrotate 5s linear infinite;
+     background-color:blue;
+     position:absolute;
+     left:50%;
+     top:50%;
+     margin-left:-15px;
+     margin-top:-15px;
+ }
+ @keyframes myrotate{
+    0% {transform: rotate(0deg); } 
+    100% {transform: rotate(360deg); } 
+
+}
+ .loading::after{
+     content:"";
+     display:block;
+     width:20px;
+     height:20px;
+     background-color:rgba(224, 238, 224, 0.8);
+     position:absolute;
+     margin-left:-10px;
+     margin-top:-10px;
+     left:50%;
+     top:50%;
+     border-radius:50%;
+ }
+.wrapper .songList li{
+    border-bottom:1px solid #ddd;
+    padding:10px;
+}
+.active{
+    color:white;
+}
+.wrapper main{
+    flex-grow:1;
+    padding-left:10px;
+}
+.wrapper main .form{
+    padding-top:10px;
+    display:flex;
+    flex-direction:column;
+    padding-left:10px;
+    width:500px;
+    margin:0 auto;
+}
+.wrapper main .form .row{
+   margin-right:5px;
+   display:flex;
+   align-items: center;
+   justify-content: flex-start;
+   color:white;
+   padding-bottom:2px;
+}
+.wrapper .topic{
+    text-align:center;
+    color:white;
+}
+.wrapper main .form div{
+    display:flex;
+    flex-direction:row;
+    margin-bottom:10px;
+}
+.wrapper main .form input{
+    padding:3px 6px;
+}
+.wrapper main .button{
+    height:30px;
+    padding:5px 10px;
+    background-color:#ddd;
+    border:none;
+    border-radius:4px;
+    font-size:10px;
+    width:60px;
+    margin:3px auto;
+}

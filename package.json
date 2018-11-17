@@ -1,0 +1,19 @@
+{
+  "name": "music",
+  "version": "1.0.0",
+  "description": "musicCloud is mine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "music"
+  ],
+  "author": "BessCC",
+  "license": "ISC",
+  "dependencies": {
+    "leancloud-storage": "^3.11.0",
+    "qiniu-js":"^1.0.22",  
+    "plupload":"^2.3.2"
+  }
+}
